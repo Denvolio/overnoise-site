@@ -1,0 +1,1 @@
+title: \" & 3.properties.Title.title[1].plain_text & date: \" & formatDate(now;0) & NaNlang: \" & langPath & slug: \" & slug & false
