@@ -3,9 +3,15 @@ title = "Overnoise"
 theme = "LoveIt"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
+# Если хочешь, чтобы и EN тоже был в подкаталоге /en/, раскомментируй строку ниже:
+# defaultContentLanguageInSubdir = true
 
 [pagination]
   pagerSize = 10
+
+# Красивые и стабильные URL для постов
+[permalinks]
+  posts = "/posts/:slug/"
 
 [languages]
   [languages.en]
@@ -40,7 +46,7 @@ subtitle  = "Досліджуємо, як ШІ змінює культуру, ш
 # --- Header: mini logo (global) ---
 [params.header]
   [params.header.title]
-    logo   = "/uploads/overnoise-mini.svg"
+    logo   = "/uploads/overnoise-mini.svg"  # файл лежит в static/uploads/
     name   = "Overnoise"
     typeit = false
 
@@ -83,13 +89,14 @@ subtitle  = "Досліджуємо, як ШІ змінює культуру, ш
 
 # --- Output formats ---
 [outputs]
-home    = ["HTML", "RSS"]
-section = ["HTML", "RSS"]
-taxonomy= ["HTML", "RSS"]
-term    = ["HTML", "RSS"]
-page    = ["HTML"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term     = ["HTML", "RSS"]
+  page     = ["HTML"]
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
