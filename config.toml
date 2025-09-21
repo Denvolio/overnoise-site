@@ -1,0 +1,93 @@
+baseURL = "https://overnoise.online/"
+title = "Overnoise"
+theme = "LoveIt"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+paginate = 10
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+  [languages.uk]
+    languageName = "Українська"
+    weight = 2
+    contentDir = "content/uk"
+
+[params]
+  description = "Overnoise — a bilingual blog (EN/UK) about AI, culture, and society."
+  defaultTheme = "auto"  # auto = подстраивается под систему
+
+  [params.author]
+    name  = "Denys Voroshylov"
+    email = "author@overnoise.online"
+    link  = "https://overnoise.online"
+
+# --- Home Page: avatar + subtitle (per language) ---
+[languages.en.params.home.profile]
+enable    = true
+avatarURL = "/uploads/overnoise-avatar.png"
+subtitle  = "Exploring how AI reshapes culture, noise, and meaning."
+
+[languages.uk.params.home.profile]
+enable    = true
+avatarURL = "/uploads/overnoise-avatar.png"
+subtitle  = "Досліджуємо, як ШІ змінює культуру, шум і сенси."
+
+# --- Header: mini logo (global) ---
+[params.header]
+  [params.header.title]
+    logo   = "/uploads/overnoise-mini.svg"
+    name   = "Overnoise"
+    typeit = false
+
+# --- Menu (localized) ---
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[languages.en.menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+[languages.uk.menu]
+  [[languages.uk.menu.main]]
+    name = "Головна"
+    url = "/uk/"
+    weight = 1
+  [[languages.uk.menu.main]]
+    name = "Публікації"
+    url = "/uk/posts/"
+    weight = 2
+  [[languages.uk.menu.main]]
+    name = "Про сайт"
+    url = "/uk/about/"
+    weight = 3
+  [[languages.uk.menu.main]]
+    name = "Теги"
+    url = "/uk/tags/"
+    weight = 4
+
+# --- Output formats ---
+[outputs]
+home    = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+taxonomy= ["HTML", "RSS"]
+term    = ["HTML", "RSS"]
+page    = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
