@@ -36,12 +36,12 @@ enableRobotsTXT = true
 [languages.en.params.home.profile]
 enable    = true
 avatarURL = "/uploads/overnoise-avatar.png"
-subtitle  = "Exploring how AI reshapes culture, noise, and meaning."
+subtitle  = "What’s worth hearing through the noise."
 
 [languages.uk.params.home.profile]
 enable    = true
 avatarURL = "/uploads/overnoise-avatar.png"
-subtitle  = "Досліджуємо, як ШІ змінює культуру, шум і сенси."
+subtitle  = "Те, що варто почути крізь шум."
 
 # --- Header: mini logo (global) ---
 [params.header]
