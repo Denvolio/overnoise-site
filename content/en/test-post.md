@@ -1,0 +1,1 @@
+title: \" & 3.properties_value.Title[].plain_text & date: \" & formatDate(now; 0) & NaNlang: \" & get(langPath) & slug: \" & get(slug) & 
